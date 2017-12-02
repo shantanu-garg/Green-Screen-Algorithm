@@ -1,0 +1,31 @@
+// write your code here
+function BluewithYellow(x)
+{
+    for(var pixel of x.values())
+    {
+           var r = pixel.getRed();
+           var g = pixel.getGreen();
+           var b = pixel.getBlue();
+       
+               if( r == 255 && g == 255 && b == 255)
+                  {
+                    pixel.setRed(255);
+                    pixel.setGreen(255);
+                    pixel.setBlue(255);
+                  }
+    
+               else
+                  {
+                    pixel.setRed(255);
+                    pixel.setGreen(255);
+                    pixel.setBlue(0);
+        
+                   }
+    
+    
+    }
+}
+
+var img = new SimpleImage('duke_blue_devil.png');
+BluewithYellow(img);
+print(img);

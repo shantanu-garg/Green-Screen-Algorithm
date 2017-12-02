@@ -1,0 +1,16 @@
+
+function swapGreenRed(x)
+{
+  for( var pixel of x.values())
+  {
+     var a =  pixel.getRed();
+     var b = pixel.getGreen();
+      pixel.setRed(b);
+      pixel.setGreen(a)
+  }
+    
+} 
+
+var img1 = new SimpleImage('drewgreen.png');
+swapGreenRed(img1);
+print(img1);
