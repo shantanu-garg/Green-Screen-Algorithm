@@ -1,4 +1,4 @@
-// write your code here
+
 var fgimage = new SimpleImage('drewRobert.png');
 var bgimage = new SimpleImage('dinos.png');
 var output = new SimpleImage(fgimage.getWidth(),fgimage.getHeight());
