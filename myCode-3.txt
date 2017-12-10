@@ -1,0 +1,8 @@
+function setBlack(x){
+ for(var pixel of x.values()){
+    pixel.setGreen(0);
+    pixel.setBlue(0);
+    pixel.setRed(0);
+ }
+ return x;    
+}
