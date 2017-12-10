@@ -1,0 +1,31 @@
+function addBorder(image)
+{
+    function setBlack(pixel)
+    {
+    pixel.setGreen(0);
+    pixel.setBlue(0);
+    pixel.setRed(0);
+    }
+    
+     for(var px of image.values())
+      {
+         var x = image.getWidth();
+         var y = image.getHeight();
+         var a = px.getX();
+         var b = px.getY();
+            if(a<=10 || x-a <= 10)
+            {
+               setBlack(px);
+            }
+            if(b<=10 || y-b <=10)
+            {
+               setBlack(px);
+            }
+   
+       }
+}
+
+var fgimage = new SimpleImage('drewgreen.png');
+addBorder(fgimage);
+print(fgimage);
+
